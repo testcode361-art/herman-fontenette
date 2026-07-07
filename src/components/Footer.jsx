@@ -51,8 +51,8 @@ const Footer = () => {
           {/* Navigation Links - Right */}
           <div className="flex gap-4 md:gap-6 text-[#B8C4D6] text-sm whitespace-nowrap">
             <a href="#" className="hover:text-[#38D9FF] transition duration-200">Privacy</a>
-            <a href="#" className="hover:text-[#38D9FF] transition duration-200">Contact</a>
-            <a href="#" className="hover:text-[#38D9FF] transition duration-200">Books</a>
+            <a href="#contact" className="hover:text-[#38D9FF] transition duration-200">Contact</a>
+            <a href="#books" className="hover:text-[#38D9FF] transition duration-200">Books</a>
           </div>
         </div>
 
