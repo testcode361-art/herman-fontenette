@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx - Updated with logo
+// src/components/Navbar.jsx - Updated with Reviews link
 import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -15,6 +15,7 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Books', href: '#books' },
+    { name: 'Reviews', href: '#reviews' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -29,11 +30,10 @@ const Navbar = () => {
           {/* Logo and Brand */}
           <div className="flex-shrink-0 flex items-center gap-3">
             <img 
-              src="/images/logo.png" 
+              src="/logo.png" 
               alt="Herman Fontenette Logo" 
               className="h-10 w-auto object-contain"
               onError={(e) => {
-                // Fallback if logo fails to load
                 e.target.style.display = 'none';
               }}
             />

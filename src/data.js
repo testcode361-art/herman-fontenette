@@ -26,12 +26,25 @@ Ideal for fans of Left Behind, Dune, and The Book of Revelation
 Are you ready for the ultimate battle between light and darkness?
 Step into the world of THE VATH, a story that dares to ask: What if salvation came from the stars?`,
     cover: "/images/1.jpg",
+    reviews: [],
+    rating: 5,
+    totalReviews: 1,
     link: "https://www.amazon.com/Vath-WARRIORS-UNIVERSE-Herman-Fontenette-ebook/dp/B0FBLVKYRZ?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.9GTGMztoiy5k2MnLtMTHvNI2M-7oPjmQxD82cyWlaRHVwLwqd-61_nsVyrUg_fbA6cN_4__6JFghyeZYiPKwrtk8RtnUY-PAD35WyidPhhwTeSQLd4W0zWxUDIVe1TpPbVU7s_o7btuo9P2xPyHTmYdXfZiSYg6BPb4IO6XCwg2s2WYrJs9pQp50gRLAEnnt6bqLcHu9_4VGTIYG0wj8Rg.mpnAIY_K1oOzp7rWf1lWk4kzYZl6G4P4HCE5KBEHF68&dib_tag=AUTHOR"
   },
   {
     title: "2027 The Years of The Tribulation",
     description: `This book is the sequel to the book "2026 The Fall of America". This book illustrates how the world became once the country China stepped away from glory as a strange man from Europe entered the world: Nicholas Steinbuhr, a man who was born from a wicked mother and a spirit from hell. The evil young man deceived the world with his charm as he began to speak on his New World government that sponsored the New World money the Mark. The majority of the world admonished the false man of hope as some despised him. After nearly three years of leading the New World, a sniper from unknown circumstances shot the man as Nicholas raised himself from the hit with pure hate in his spirit. Most people including the former president of the United States blamed the black people who hid in the woods. The Anti-Christ and his army began a war against the poor people while not knowing they had protection. The Vath was an extraterrestrial force with seeds of black people throughout the universe. They arrived back to Earth in full combat gear. The New World army stood no chance with the militaristic force of aliens. The war would have dragged further into the future if Judgment Day would not come.`,
     cover: "/images/2.jpg",
+    rating: 5,
+    totalReviews: 1,
+    reviews: [
+      {
+        name: "Susantha",
+        rating: 5,
+        date: "December 4, 2023",
+        comment: "It's great story."
+      }
+    ],
     link: "https://www.amazon.com/Disturbing-Sinners-These-Last-Days-ebook/dp/B0CSSKMVXK?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.9GTGMztoiy5k2MnLtMTHvNI2M-7oPjmQxD82cyWlaRHVwLwqd-61_nsVyrUg_fbA6cN_4__6JFghyeZYiPKwrtk8RtnUY-PAD35WyidPhhwTeSQLd4W0zWxUDIVe1TpPbVU7s_o7btuo9P2xPyHTmYdXfZiSYg6BPb4IO6XCwg2s2WYrJs9pQp50gRLAEnnt6bqLcHu9_4VGTIYG0wj8Rg.mpnAIY_K1oOzp7rWf1lWk4kzYZl6G4P4HCE5KBEHF68&dib_tag=AUTHOR"
   },
   {
@@ -48,6 +61,7 @@ The story also unfolds the tale of Samantha Willis, a modern witch-turned hustle
 
 Amidst the tangled threads of these disparate lives, the novel explores themes of love, redemption, and the enduring power of faith. Will these characters find solace and salvation, or will their pasts continue to haunt them? Find out in this enthralling narrative that transcends boundaries and brings together a tapestry of lives in a quest for grace and forgiveness.`,
     cover: "/images/3.jpg",
+    reviews: [],
     link: "https://www.amazon.com/2027-Years-Tribulation-Herman-Fontenette-ebook/dp/B0CFSTZG38?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.9GTGMztoiy5k2MnLtMTHvNI2M-7oPjmQxD82cyWlaRHVwLwqd-61_nsVyrUg_fbA6cN_4__6JFghyeZYiPKwrtk8RtnUY-PAD35WyidPhhwTeSQLd4W0zWxUDIVe1TpPbVU7s_o7btuo9P2xPyHTmYdXfZiSYg6BPb4IO6XCwg2s2WYrJs9pQp50gRLAEnnt6bqLcHu9_4VGTIYG0wj8Rg.mpnAIY_K1oOzp7rWf1lWk4kzYZl6G4P4HCE5KBEHF68&dib_tag=AUTHOR"
   },
   {
@@ -56,6 +70,7 @@ Amidst the tangled threads of these disparate lives, the novel explores themes o
 
 There even were extraterrestrials that arrived to save its seed, the black folks from the hoods of America. Some people believed in them as the majority of the blacks gave a cold shoulder to the strangers. It was way too hard to believe in the Vath after centuries of hardship for those of African descent. Therefore, many remained on Earth as some traveled the universe to a foreign planet. After all, the Earth began to form into a different planet to most. The Chinese were in control. There were uncertain events about to take place upon the third planet from the sun.`,
     cover: "/images/4.jpg",
+    reviews: [],
     link: "https://www.amazon.com/2026-Fall-America-Herman-Fontentte-ebook/dp/B0CD46H4MC?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.9GTGMztoiy5k2MnLtMTHvNI2M-7oPjmQxD82cyWlaRHVwLwqd-61_nsVyrUg_fbA6cN_4__6JFghyeZYiPKwrtk8RtnUY-PAD35WyidPhhwTeSQLd4W0zWxUDIVe1TpPbVU7s_o7btuo9P2xPyHTmYdXfZiSYg6BPb4IO6XCwg2s2WYrJs9pQp50gRLAEnnt6bqLcHu9_4VGTIYG0wj8Rg.mpnAIY_K1oOzp7rWf1lWk4kzYZl6G4P4HCE5KBEHF68&dib_tag=AUTHOR"
   },
   {
@@ -89,6 +104,7 @@ Character-driven stories with real emotional depth
 
 If you enjoy gripping sci-fi thrillers filled with action, purpose, and powerful storytelling, The Last Hustle is a must-read.`,
     cover: "/images/5.jpg",
+    reviews: [],
     link: "https://www.amazon.com/Last-Hustle-Thriller-Survival-Destiny/dp/B0GXKHDFNC?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.9GTGMztoiy5k2MnLtMTHvNI2M-7oPjmQxD82cyWlaRHVwLwqd-61_nsVyrUg_fbA6cN_4__6JFghyeZYiPKwrtk8RtnUY-PAD35WyidPhhwTeSQLd4W0zWxUDIVe1TpPbVU7s_o7btuo9P2xPyHTmYdXfZiSYg6BPb4IO6XCwg2s2WYrJs9pQp50gRLAEnnt6bqLcHu9_4VGTIYG0wj8Rg.mpnAIY_K1oOzp7rWf1lWk4kzYZl6G4P4HCE5KBEHF68&dib_tag=AUTHOR"
   },
   {

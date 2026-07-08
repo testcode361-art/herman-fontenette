@@ -1,4 +1,4 @@
-// src/components/BookModal.jsx - Updated without scrollbar
+// src/components/BookModal.jsx - Updated to show rating even without reviews
 import React, { useEffect } from 'react';
 
 const BookModal = ({ book, isOpen, onClose }) => {
@@ -27,6 +27,9 @@ const BookModal = ({ book, isOpen, onClose }) => {
 
   if (!isOpen || !book) return null;
 
+  const hasReviews = book.reviews && book.reviews.length > 0;
+  const hasRating = book.rating && book.rating > 0;
+
   return (
     <div 
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
@@ -41,7 +44,6 @@ const BookModal = ({ book, isOpen, onClose }) => {
         onClick={(e) => e.stopPropagation()}
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        {/* Hide scrollbar for Chrome/Safari/Edge */}
         <style>{`
           .relative.glass-card::-webkit-scrollbar {
             display: none;
@@ -85,6 +87,24 @@ const BookModal = ({ book, isOpen, onClose }) => {
               <h2 className="text-2xl md:text-3xl font-bold text-white glow-text mb-3">
                 {book.title}
               </h2>
+              
+              {/* Rating Display */}
+              {hasRating && (
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <i
+                        key={i}
+                        className={`fas fa-star ${i < book.rating ? 'text-[#FFD700]' : 'text-[#B8C4D6]/30'}`}
+                      ></i>
+                    ))}
+                  </div>
+                  <span className="text-[#B8C4D6] text-sm">
+                    {book.rating}.0 ({book.totalReviews || 0} {book.totalReviews === 1 ? 'review' : 'reviews'})
+                  </span>
+                </div>
+              )}
+              
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-3 py-1 glass text-xs text-[#38D9FF] border border-[#38D9FF]/30 rounded-full">
                   Sci-Fi / Faith
@@ -117,6 +137,59 @@ const BookModal = ({ book, isOpen, onClose }) => {
             </div>
           </div>
 
+          {/* Reviews Section - Show if there are written reviews */}
+          {hasReviews && (
+            <div className="border-t border-white/10 pt-6 mt-6">
+              <h3 className="text-lg font-semibold text-[#38D9FF] mb-3 flex items-center gap-2">
+                <i className="fas fa-star"></i>
+                Reader Reviews ({book.reviews.length})
+              </h3>
+              <div className="space-y-4">
+                {book.reviews.map((review, index) => (
+                  <div key={index} className="glass-card rounded-xl p-4 border border-white/5">
+                    <div className="flex items-center gap-1 mb-2">
+                      {[...Array(5)].map((_, i) => (
+                        <i
+                          key={i}
+                          className={`fas fa-star ${i < review.rating ? 'text-[#FFD700]' : 'text-[#B8C4D6]/30'} text-sm`}
+                        ></i>
+                      ))}
+                    </div>
+                    <p className="text-[#B8C4D6] text-sm leading-relaxed italic">
+                      "{review.comment}"
+                    </p>
+                    <div className="flex items-center justify-between mt-2 border-t border-white/5 pt-2">
+                      <p className="text-white text-xs font-medium">{review.name}</p>
+                      <p className="text-[#B8C4D6]/50 text-xs">{review.date}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Rating-only display if book has rating but no reviews */}
+          {hasRating && !hasReviews && (
+            <div className="border-t border-white/10 pt-6 mt-6">
+              <h3 className="text-lg font-semibold text-[#38D9FF] mb-3 flex items-center gap-2">
+                <i className="fas fa-star"></i>
+                Rating
+              </h3>
+              <div className="glass-card rounded-xl p-4 border border-white/5 flex items-center gap-4">
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <i
+                      key={i}
+                      className={`fas fa-star ${i < book.rating ? 'text-[#FFD700]' : 'text-[#B8C4D6]/30'} text-xl`}
+                    ></i>
+                  ))}
+                </div>
+                <span className="text-white font-medium">{book.rating}.0/5</span>
+                <span className="text-[#B8C4D6]/50 text-sm">({book.totalReviews || 0} ratings)</span>
+              </div>
+            </div>
+          )}
+
           {/* Footer Actions */}
           <div className="mt-6 pt-4 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="text-xs text-[#B8C4D6]/60 flex items-center gap-2">
@@ -134,7 +207,7 @@ const BookModal = ({ book, isOpen, onClose }) => {
       </div>
 
       {/* Animation Styles */}
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from { opacity: 0; }
           to { opacity: 1; }
